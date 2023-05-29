@@ -27,5 +27,6 @@ public class ModItems {
     }
     public static void registerModItems(){
         AccurateObsidianMod.LOGGER.info("Registering Mod Items for " + AccurateObsidianMod.MOD_ID);
+        addItemsToItemGroup();
     }
 }
