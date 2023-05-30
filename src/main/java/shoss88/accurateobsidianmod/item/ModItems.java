@@ -11,15 +11,15 @@ import shoss88.accurateobsidianmod.AccurateObsidianMod;
 
 public class ModItems {
     public static final Item OBSIDIAN_CHUNK = registerItem("obsidian_chunk",
-            new Item(new FabricItemSettings()));
+            new Item(new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
-            new ShovelItem(ModToolMaterials.OBSIDIAN, 5.5f, 1, new FabricItemSettings()));
+            new ShovelItem(ModToolMaterials.OBSIDIAN, 4.5f, 1, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
-            new PickaxeItem(ModToolMaterials.OBSIDIAN, 5, 2.5f, new FabricItemSettings()));
+            new PickaxeItem(ModToolMaterials.OBSIDIAN, 4, 2.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
-            new HoeItem(ModToolMaterials.OBSIDIAN, 3, 2.5f, new FabricItemSettings()));
+            new HoeItem(ModToolMaterials.OBSIDIAN, 4, 2.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            new AxeItem(ModToolMaterials.OBSIDIAN, 10f, 0.9f, new FabricItemSettings()));
+            new AxeItem(ModToolMaterials.OBSIDIAN, 9f, 0.9f, new FabricItemSettings().fireproof()));
 
 
     private static Item registerItem(String name, Item item){
