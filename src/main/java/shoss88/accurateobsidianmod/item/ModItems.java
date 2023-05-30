@@ -19,9 +19,9 @@ public class ModItems {
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
             new HoeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            new AxeItem(ModToolMaterials.OBSIDIAN, 9f, -3.1f, new FabricItemSettings().fireproof()));
-    public static final Item OBSIDIAN_Sword = registerItem("obsidian_axe",
-            new SwordItem(ModToolMaterials.OBSIDIAN, 10, -2.4f, new FabricItemSettings().fireproof()));
+            new AxeItem(ModToolMaterials.OBSIDIAN, 8f, -3.1f, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
+            new SwordItem(ModToolMaterials.OBSIDIAN, 9, -2.4f, new FabricItemSettings().fireproof()));
 
 
     private static Item registerItem(String name, Item item){
@@ -35,6 +35,7 @@ public class ModItems {
         addToItemGroup(ItemGroups.TOOLS, OBSIDIAN_HOE);
         addToItemGroup(ItemGroups.TOOLS, OBSIDIAN_AXE);
         addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_AXE);
+        addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_SWORD);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item){

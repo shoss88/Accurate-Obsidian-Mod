@@ -16,7 +16,7 @@ public enum ModToolMaterials implements ToolMaterial {
 //    DIAMOND(MiningLevels.DIAMOND, 1561, 8.0f, 3.0f, 10, () -> Ingredient.ofItems(Items.DIAMOND)),
 //    GOLD(MiningLevels.WOOD, 32, 12.0f, 0.0f, 22, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
 //    NETHERITE(MiningLevels.NETHERITE, 2031, 9.0f, 4.0f, 15, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
-    OBSIDIAN(1, 120, 5.0f, 0.0f, 5, () -> Ingredient.ofItems(ModItems.OBSIDIAN_CHUNK));
+    OBSIDIAN(1, 60, 5.0f, 0.0f, 5, () -> Ingredient.ofItems(ModItems.OBSIDIAN_CHUNK));
 
 
     private final int miningLevel;
