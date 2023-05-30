@@ -13,13 +13,15 @@ public class ModItems {
     public static final Item OBSIDIAN_CHUNK = registerItem("obsidian_chunk",
             new Item(new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
-            new ShovelItem(ModToolMaterials.OBSIDIAN, 4.5f, 1, new FabricItemSettings().fireproof()));
+            new ShovelItem(ModToolMaterials.OBSIDIAN, 4.5f, -3, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
-            new PickaxeItem(ModToolMaterials.OBSIDIAN, 4, 2.5f, new FabricItemSettings().fireproof()));
+            new PickaxeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
-            new HoeItem(ModToolMaterials.OBSIDIAN, 4, 2.5f, new FabricItemSettings().fireproof()));
+            new HoeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            new AxeItem(ModToolMaterials.OBSIDIAN, 9f, 0.9f, new FabricItemSettings().fireproof()));
+            new AxeItem(ModToolMaterials.OBSIDIAN, 9f, -3.1f, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_Sword = registerItem("obsidian_axe",
+            new SwordItem(ModToolMaterials.OBSIDIAN, 10, -2.4f, new FabricItemSettings().fireproof()));
 
 
     private static Item registerItem(String name, Item item){
