@@ -3,11 +3,13 @@ package shoss88.accurateobsidianmod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.mixin.content.registry.AxeItemAccessor;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import shoss88.accurateobsidianmod.AccurateObsidianMod;
+import shoss88.accurateobsidianmod.item.custom.ObsidianArmorItem;
 
 public class ModItems {
     public static final Item OBSIDIAN_CHUNK = registerItem("obsidian_chunk",
@@ -22,6 +24,14 @@ public class ModItems {
             new AxeItem(ModToolMaterials.OBSIDIAN, 8f, -3.1f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
             new SwordItem(ModToolMaterials.OBSIDIAN, 9, -2.4f, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.LEGGINGS, new FabricItemSettings().fireproof()));
+    public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
+            new ArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.BOOTS, new FabricItemSettings().fireproof()));
 
 
     private static Item registerItem(String name, Item item){
@@ -36,6 +46,10 @@ public class ModItems {
         addToItemGroup(ItemGroups.TOOLS, OBSIDIAN_AXE);
         addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_AXE);
         addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_SWORD);
+        addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_HELMET);
+        addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_CHESTPLATE);
+        addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_LEGGINGS);
+        addToItemGroup(ItemGroups.COMBAT, OBSIDIAN_BOOTS);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item){
