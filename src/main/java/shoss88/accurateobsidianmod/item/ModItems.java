@@ -9,7 +9,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import shoss88.accurateobsidianmod.AccurateObsidianMod;
-import shoss88.accurateobsidianmod.item.custom.ObsidianArmorItem;
 
 public class ModItems {
     public static final Item OBSIDIAN_CHUNK = registerItem("obsidian_chunk",
