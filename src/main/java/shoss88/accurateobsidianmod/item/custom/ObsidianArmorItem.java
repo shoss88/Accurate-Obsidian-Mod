@@ -18,5 +18,9 @@ public class ObsidianArmorItem extends ArmorItem{
         stack.addEnchantment(Enchantments.FIRE_PROTECTION, 1);
         stack.addEnchantment(Enchantments.THORNS, 1);
     }
-    
+
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
 }

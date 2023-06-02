@@ -24,7 +24,7 @@ public class ModItems {
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
             new AxeItem(ModToolMaterials.OBSIDIAN, 8f, -3.1f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            new SwordItem(ModToolMaterials.OBSIDIAN, 9, -2.4f, new FabricItemSettings().fireproof()));
+            new SwordItem(ModToolMaterials.OBSIDIAN, 7, -2.4f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
             new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
