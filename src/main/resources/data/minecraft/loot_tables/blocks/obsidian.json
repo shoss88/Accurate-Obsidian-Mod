@@ -10,12 +10,36 @@
       ],
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "accurateobsidianmod:obsidian_chunk",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
-              "count": 9
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:obsidian"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "accurateobsidianmod:obsidian_chunk",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 9
+                }
+              ]
             }
           ]
         }
