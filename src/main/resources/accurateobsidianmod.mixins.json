@@ -3,7 +3,7 @@
 	"package": "shoss88.accurateobsidianmod.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"MixinBlocks"
 	],
 	"injectors": {
 		"defaultRequire": 1
