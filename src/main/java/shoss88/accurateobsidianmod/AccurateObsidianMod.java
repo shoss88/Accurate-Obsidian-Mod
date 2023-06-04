@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import shoss88.accurateobsidianmod.effect.ModEffects;
 import shoss88.accurateobsidianmod.item.ModItems;
 
 public class AccurateObsidianMod implements ModInitializer {
@@ -14,5 +15,6 @@ public class AccurateObsidianMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModEffects.registerEffects();
 	}
 }

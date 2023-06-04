@@ -15,7 +15,7 @@ public class MixinCraftingResultInventory {
     private void injectSetStack(int slot, ItemStack stack, CallbackInfo ci){
         if (stack.getItem() instanceof ObsidianArmorItem && !stack.hasEnchantments()){
             stack.addEnchantment(Enchantments.FIRE_PROTECTION, 1);
-            stack.addEnchantment(Enchantments.THORNS, 1);
+            stack.addEnchantment(Enchantments.THORNS, 4);
         }
     }
 }

@@ -8,5 +8,6 @@
   "item.accurateobsidianmod.obsidian_helmet": "Obsidian Helmet",
   "item.accurateobsidianmod.obsidian_chestplate": "Obsidian Chestplate",
   "item.accurateobsidianmod.obsidian_leggings": "Obsidian Leggings",
-  "item.accurateobsidianmod.obsidian_boots": "Obsidian Boots"
+  "item.accurateobsidianmod.obsidian_boots": "Obsidian Boots",
+  "effect.accurateobsidianmod.bleeding": "bleeding"
 }

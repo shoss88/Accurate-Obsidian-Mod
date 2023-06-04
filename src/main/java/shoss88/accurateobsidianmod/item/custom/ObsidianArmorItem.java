@@ -17,7 +17,7 @@ public class ObsidianArmorItem extends ArmorItem{
     public void onCraft(ItemStack stack, World world, PlayerEntity player) {
         if (!stack.hasEnchantments()) {
             stack.addEnchantment(Enchantments.FIRE_PROTECTION, 1);
-            stack.addEnchantment(Enchantments.THORNS, 1);
+            stack.addEnchantment(Enchantments.THORNS, 4);
         }
     }
 

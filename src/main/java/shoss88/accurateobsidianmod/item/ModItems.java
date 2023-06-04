@@ -8,21 +8,21 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import shoss88.accurateobsidianmod.AccurateObsidianMod;
-import shoss88.accurateobsidianmod.item.custom.ObsidianArmorItem;
+import shoss88.accurateobsidianmod.item.custom.*;
 
 public class ModItems {
     public static final Item OBSIDIAN_CHUNK = registerItem("obsidian_chunk",
             new Item(new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
-            new ShovelItem(ModToolMaterials.OBSIDIAN, 4.5f, -3, new FabricItemSettings().fireproof()));
+            new ObsidianShovelItem(ModToolMaterials.OBSIDIAN, 3.0f, -3, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
-            new PickaxeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
+            new ObsidianPickaxeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
-            new HoeItem(ModToolMaterials.OBSIDIAN, 4, -1.5f, new FabricItemSettings().fireproof()));
+            new ObsidianHoeItem(ModToolMaterials.OBSIDIAN, 2, -1.5f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            new AxeItem(ModToolMaterials.OBSIDIAN, 8f, -3.1f, new FabricItemSettings().fireproof()));
+            new ObsidianAxeItem(ModToolMaterials.OBSIDIAN, 8.0f, -3.1f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            new SwordItem(ModToolMaterials.OBSIDIAN, 7, -2.4f, new FabricItemSettings().fireproof()));
+            new ObsidianSwordItem(ModToolMaterials.OBSIDIAN, 6, -2.4f, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
             new ObsidianArmorItem(ModArmorMaterials.OBSIDIAN, ArmorItem.Type.HELMET, new FabricItemSettings().fireproof()));
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
@@ -55,7 +55,7 @@ public class ModItems {
         if (item instanceof ObsidianArmorItem){
             ItemStack stack = new ItemStack(item);
             stack.addEnchantment(Enchantments.FIRE_PROTECTION, 1);
-            stack.addEnchantment(Enchantments.THORNS, 1);
+            stack.addEnchantment(Enchantments.THORNS, 4);
             ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(stack));
         }
         else {
