@@ -4,11 +4,14 @@
   "key": {
     "#": {
       "item": "accurateobsidianmod:obsidian_chunk"
+    },
+    "U": {
+      "item": "minecraft:lava_bucket"
     }
   },
   "pattern": [
     "###",
-    "###",
+    "#U#",
     "###"
   ],
   "result": {
