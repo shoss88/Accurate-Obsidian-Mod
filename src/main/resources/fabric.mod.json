@@ -3,7 +3,7 @@
 	"id": "accurateobsidianmod",
 	"version": "${version}",
 	"name": "Accurate Obsidian Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Makes obsidian accurate and grounded in reality.",
 	"authors": [
 		"shoss88"
 	],
@@ -12,7 +12,6 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
