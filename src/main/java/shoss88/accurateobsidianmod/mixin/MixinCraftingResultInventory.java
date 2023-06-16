@@ -11,6 +11,17 @@ import shoss88.accurateobsidianmod.item.custom.ObsidianArmorItem;
 
 @Mixin(CraftingResultInventory.class)
 public class MixinCraftingResultInventory {
+
+    /**
+     * After an item has been crafted, apply the fire protection and thorns enchantments such that
+     * it appears in the crafting result inventory slot.
+     * @param slot
+     *     The specific crafting result inventory slot
+     * @param stack
+     *     The ItemStack of a specific item.
+     * @param ci
+     *     CallbackInfo for the calling method.
+     */
     @Inject(method = "setStack", at = @At("HEAD"))
     private void injectSetStack(int slot, ItemStack stack, CallbackInfo ci){
         if (stack.getItem() instanceof ObsidianArmorItem && !stack.hasEnchantments()){

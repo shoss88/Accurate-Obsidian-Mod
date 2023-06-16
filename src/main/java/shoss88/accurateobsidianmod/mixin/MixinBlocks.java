@@ -8,6 +8,11 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 @Mixin(Blocks.class)
 public abstract class MixinBlocks {
 
+    /**
+     * Change the hardness and resistance of obsidian when it is instantiated.
+     * @param args
+     *     All arguments within the strength() method
+     */
     @ModifyArgs(method = "<clinit>", slice = @Slice(
                 from = @At(value = "CONSTANT", args = "stringValue=obsidian")
             ),
